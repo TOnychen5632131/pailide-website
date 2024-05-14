@@ -59,6 +59,7 @@
                 transform: none;
                 top: 0;
                 left: 0;
+                padding: 20px 0;
             }
 
             .center_block > div {
@@ -72,16 +73,27 @@
                 margin-bottom: 20px;
             }
 
-            .center_block video {
-                width: 100%;
-                border-radius: 0;
-                padding: 0;
+            .video-container {
+                position: relative;
+                width: 548px;
+                height: 1104px;
+                max-width: 100%;
+                margin: 0 auto;
             }
 
-            .center_block img {
+            .video-container video {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 94%; /* 调整视频大小，确保在图片内 */
+                height: auto;
+                transform: translate(-50%, -50%);
+                border-radius: 30px;
+            }
+
+            .video-container img {
                 width: 100%;
-                left: 0;
-                top: 0;
+                height: auto;
             }
 
             .center_block h1, .center_block h2, .center_block .download_link {
@@ -94,11 +106,11 @@
 <body>
 
 <div class="center_block">
-    <div style="position: relative;">
-        <video autoplay muted loop style="width: 100%; border-radius: 30px; padding: 15px 17px 0 17px;">
+    <div class="video-container">
+        <img src="https://raw.githubusercontent.com/tonychen5632131/pailide-website/master/iphone_mask.png">
+        <video autoplay muted loop>
             <source src="https://raw.githubusercontent.com/tonychen5632131/pailide-website/master/video.mp4" type="video/mp4">
         </video>
-        <img src="https://raw.githubusercontent.com/tonychen5632131/pailide-website/master/iphone_mask.png" style="position: absolute; width: 100%; left: 0;">
     </div>
 
     <div>
