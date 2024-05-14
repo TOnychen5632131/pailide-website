@@ -52,6 +52,10 @@
         }
 
         @media (max-width: 768px) {
+            body {
+                padding: 20px 0; /* 增加顶部和底部的间隙 */
+            }
+
             .center_block {
                 width: 100%;
                 margin: 0;
@@ -87,6 +91,44 @@
             .center_block h1, .center_block h2, .center_block .download_link {
                 margin-top: 20px;
                 text-align: center;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .center_block {
+                width: 840px;
+                margin-left: -420px;
+                height: 600px;
+                margin-top: -300px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
+
+            .center_block > div {
+                float: right;
+            }
+
+            .center_block > div:first-child {
+                margin-bottom: 0;
+            }
+
+            .center_block video {
+                width: 100%;
+                border-radius: 30px;
+                padding: 15px 17px 0 17px;
+            }
+
+            .center_block img {
+                width: 100%;
+                left: 0;
+                top: 0;
+                position: absolute;
+            }
+
+            .center_block h1, .center_block h2, .center_block .download_link {
+                margin-top: 0;
+                text-align: left;
             }
         }
     </style>
