@@ -50,40 +50,37 @@
             text-align: center;
         }
 
-        video {
-            width: 100%;
-            border-radius: 30px;
-            padding: 15px 17px 0 17px;
-        }
-
-        img {
-            max-width: 100%;
-        }
-
-        h1 {
-            font-size: 40px;
-            font-weight: 400;
-            font-family: -apple-system, system-ui, 'San Francisco', BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu;
-        }
-
-        h2 {
-            font-size: 25px;
-            margin-top: 50px;
-        }
-
         @media (max-width: 767px) {
+            .center_block {
+                padding: 10px;
+            }
+            
+            video {
+                width: 100%;
+                border-radius: 15px;
+                padding: 10px 10px 0 10px;
+            }
+
             .title2_font {
-                font-size: 20px;
-                line-height: 30px;
+                font-size: 18px;
+                line-height: 28px;
             }
 
             h1 {
-                font-size: 30px;
+                font-size: 24px;
             }
 
             h2 {
-                font-size: 20px;
+                font-size: 18px;
                 margin-top: 30px;
+            }
+
+            .download_link {
+                font-size: 14px;
+            }
+
+            table {
+                margin-top: 50px;
             }
         }
     </style>
@@ -91,34 +88,40 @@
 <body>
 
 <div class="center_block">
-    <div style="margin: 0 auto; position: relative; max-width: 280px;">
-        <video autoplay muted loop>
-            <source src="video.mp4?3" type="video/mp4">
-        </video>
-        <img src="iphone_mask.png?4" style="position: absolute; top: 0; left: 0; width: 100%;">
+    <div style="float: right;">
+        <div style="width: 280px; margin: 0 auto; position: relative;">
+            <video autoplay muted loop style="width: 100%; border-radius: 30px; padding: 15px 17px 0 17px;">
+                <source src="video.mp4?3" type="video/mp4">
+            </video>
+            <img src="iphone_mask.png?4" style="position: absolute; width: 100%; left: 0;">
+        </div>
     </div>
 
-    <h1>拍立得 AI - 内容分析助手</h1>
+    <div>
+        <h1 style="margin-top: 100px; font-size: 40px; font-weight: 400; font-family: -apple-system, system-ui, 'San Francisco', BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu;">
+            拍立得 AI - 内容分析助手
+        </h1>
 
-    <h2 class="title2_font">
-        双击手机背面即可分析屏幕内容，并用中文总结。
-        <br>
-        适用于嘈杂的任何信息，无论多复杂的内容都轻松看完。
-    </h2>
+        <h2 style="margin-top: 50px; font-size: 25px;" class="title2_font">
+            双击手机背面即可分析屏幕内容，并用中文总结。
+            <br>
+            适用于嘈杂的任何信息，无论多复杂的内容都轻松看完。
+        </h2>
 
-    <div style="margin-top: 50px;">
-        <table style="display: inline-block;">
-            <tr>
-                <td style="vertical-align: middle;">
-                    <img src="https://timeto.me/res/wyou_app/SiteIconApple.svg" style="position: relative; top: -2px;">
-                </td>
-                <td style="vertical-align: middle;">
-                    <a target="_blank" href="https://testflight.apple.com/join/6xJPSAdK" class="download_link">
-                        测试 拍立得 AI iPhone 版
-                    </a>
-                </td>
-            </tr>
-        </table>
+        <div style="margin-top: 150px;">
+            <table style="display: inline-block;">
+                <tr>
+                    <td style="vertical-align: center;">
+                        <img src="https://timeto.me/res/wyou_app/SiteIconApple.svg" style="position: relative; top: -2px;">
+                    </td>
+                    <td style="vertical-align: center;">
+                        <a target="_blank" href="https://testflight.apple.com/join/6xJPSAdK" class="download_link">
+                            测试 拍立得 AI iPhone 版
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
 </div>
 
