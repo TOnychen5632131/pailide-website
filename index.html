@@ -50,18 +50,55 @@
             top: 50%;
             left: 50%;
         }
+
+        @media (max-width: 768px) {
+            .center_block {
+                width: 100%;
+                margin: 0;
+                position: static;
+                transform: none;
+                top: 0;
+                left: 0;
+            }
+
+            .center_block > div {
+                float: none;
+                width: 100%;
+                text-align: center;
+                padding: 0 20px;
+            }
+
+            .center_block > div:first-child {
+                margin-bottom: 20px;
+            }
+
+            .center_block video {
+                width: 100%;
+                border-radius: 0;
+                padding: 0;
+            }
+
+            .center_block img {
+                width: 100%;
+                left: 0;
+                top: 0;
+            }
+
+            .center_block h1, .center_block h2, .center_block .download_link {
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body>
 
 <div class="center_block">
-    <div style="float: right;">
-        <div style="width: 280px; margin: 0 auto; position: relative;">
-            <video autoplay muted loop style="width: 100%; border-radius: 30px; padding: 15px 17px 0 17px;">
-                <source src="https://raw.githubusercontent.com/tonychen5632131/pailide-website/master/video.mp4" type="video/mp4">
-            </video>
-            <img src="https://raw.githubusercontent.com/tonychen5632131/pailide-website/master/iphone_mask.png" style="position: absolute; width: 100%; left: 0;">
-        </div>
+    <div style="position: relative;">
+        <video autoplay muted loop style="width: 100%; border-radius: 30px; padding: 15px 17px 0 17px;">
+            <source src="https://raw.githubusercontent.com/tonychen5632131/pailide-website/master/video.mp4" type="video/mp4">
+        </video>
+        <img src="https://raw.githubusercontent.com/tonychen5632131/pailide-website/master/iphone_mask.png" style="position: absolute; width: 100%; left: 0;">
     </div>
 
     <div>
