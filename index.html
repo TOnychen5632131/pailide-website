@@ -52,6 +52,11 @@
         }
 
         @media (max-width: 768px) {
+            body {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
             .center_block {
                 width: 100%;
                 margin: 0;
@@ -59,15 +64,14 @@
                 transform: none;
                 top: 0;
                 left: 0;
-                padding: 20px; /* 添加内边距以提供安全区 */
-                box-sizing: border-box; /* 确保内边距不会影响总宽度 */
+                padding: 0 10px; /* 添加左右安全区 */
             }
 
             .center_block > div {
                 float: none;
                 width: 100%;
                 text-align: center;
-                padding: 0;
+                padding: 0 20px;
             }
 
             .center_block > div:first-child {
