@@ -59,13 +59,15 @@
                 transform: none;
                 top: 0;
                 left: 0;
+                padding: 20px; /* 添加内边距以提供安全区 */
+                box-sizing: border-box; /* 确保内边距不会影响总宽度 */
             }
 
             .center_block > div {
                 float: none;
                 width: 100%;
                 text-align: center;
-                padding: 0 20px;
+                padding: 0;
             }
 
             .center_block > div:first-child {
