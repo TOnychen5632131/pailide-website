@@ -58,17 +58,37 @@
             width: 100%;
             height: 100%;
         }
+
+        @media (max-width: 768px) {
+            .video-container img {
+                border-radius: 15px;
+                padding: 7px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            h2 {
+                font-size: 20px;
+                line-height: 30px;
+            }
+
+            .download_link {
+                font-size: 15px;
+            }
+        }
     </style>
 </head>
 <body>
 
 <div class="container center_block">
     <div class="row">
-        <div class="col-xs-12 col-sm-6 col-sm-offset-3 video-container">
+        <div class="col-xs-12 video-container">
             <video autoplay muted loop>
                 <source src="https://raw.githubusercontent.com/tonychen5632131/pailide-website/master/video.mp4" type="video/mp4">
             </video>
-            <img src="https://raw.githubusercontent.com/tonychen5632131/pailide-website/master/iphone_mask.png" style="border-radius: 30px; padding: 15px;">
+            <img src="https://raw.githubusercontent.com/tonychen5632131/pailide-website/master/iphone_mask.png">
         </div>
     </div>
 
